@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title th:remove="all">Template for HTML email</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <p th:text="${subject}">
+            Hello, Welcome to fly app
+        </p>
+       
+        <p>
+            You have been successfully subscribed to the <b>FlyApp</b> on
+           <!--  <span th:text="${#dates.format(subscriptionDate)}"></span> -->
+        </p>
+        <p>Your Email is: <span th:text="${email}"></span></p>
+       <p>Your Password is: <span th:text="${password}"></span></p>
+       <p><span th:text="${viewContent}"></span></p>
+     
+        <p>
+            Regards, <br /><br />
+            &emsp; <em>The Flyapp Team</em>
+        </p>
+    </body>
+</html>
